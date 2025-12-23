@@ -32,7 +32,5 @@ def run(args):
         args.subject,
         message_body
     )
-
-    if get_yes_no('Send message (Y/N)?: ', None):
-        connection.send_mail(message)
+    connection.send_mail(message)
 
